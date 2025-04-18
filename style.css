@@ -1,0 +1,59 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="file"],
+input[type="text"] {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e59d9;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}

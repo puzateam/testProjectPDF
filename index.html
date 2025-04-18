@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แก้ไข PDF ออนไลน์</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="libs/pdf-lib.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 แก้ไข PDF ออนไลน์</h1>
+
+    <div class="card">
+      <input type="file" id="pdfFile" accept="application/pdf" />
+      <input type="text" id="textInput" placeholder="พิมพ์ข้อความที่ต้องการใส่ใน PDF" />
+      <input type="text" id="fileName" placeholder="ตั้งชื่อไฟล์ใหม่ เช่น edited.pdf" />
+      
+      <div class="button-group">
+        <button onclick="addTextToPDF()">➕ เพิ่มข้อความ</button>
+        <button onclick="savePDF()">💾 ดาวน์โหลด PDF</button>
+        <button onclick="uploadToDrive()">☁️ อัปโหลดไป Google Drive</button>
+      </div>
+
+      <p id="status">📄 กรุณาเลือกไฟล์ PDF เพื่อเริ่ม</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
